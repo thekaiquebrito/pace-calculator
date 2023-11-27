@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pace calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Pace Calculator</div>
+    </header>
+
+    <main class="container">
+        <div class="main-title">
+            <h1>Calcule seu Pace, Velocidade Média e Tempo Total</h1>
+        </div>
+
+        <div class="main-content">
+            <form class="form-time">
+                <h3>Tempo Total e Velocidade Média</h3>
+                <div class="content">
+                    <div class="input-fields">
+                        <div class="input-container">
+                            <h4>Distância (km):</h4>
+                            <input type="text" placeholder="Distância" class="dist">
+                        </div>
+
+                        <div class="input-container">
+                            <h4>Pace (min/km):</h4>
+                            <input type="number" max="59" placeholder="Min" class="min">
+                            <input type="number" max="59" placeholder="Seg" class="seg">
+                        </div>
+                    </div>
+
+                    <button onclick="calculateTime(event)">Calcular</button>
+                </div>
+                <div class="result">
+                    <h4>Velocidade Média: <span class="vM"></span> KM/H</h4>
+                    <h4>Tempo Total: <span class="tT"></span></h4>
+                </div>
+            </form>
+
+            <form class="form-pace">
+                <h3>Pace</h3>
+                <div class="content">
+                    <div class="input-fields">
+                        <div class="input-container">
+                            <h4>Distância (km):</h4>
+                            <input type="number" placeholder="Distância" class="dist">
+                        </div>
+
+                        <div class="input-container">
+                            <h4>Tempo Total:</h4>
+                            <input type="number" max="23" placeholder="Horas" class="hour">
+                            <input type="number" max="59" placeholder="Min" class="min">
+                            <input type="number" max="59" placeholder="Seg" class="seg">
+                        </div>
+                    </div>
+
+                    <button onclick="calculatePace(event)">Calcular</button>
+                </div>
+
+                <div class="result">
+                    <h4>Pace: <span class="pace"></span> min/km</h4>
+                </div>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>

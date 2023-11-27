@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    background-color: unset;
+    border: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+body {
+    font-family: 'Roboto';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8E8E8;
+}
+
+header {
+    height: 50px;
+    background-color: #aaa;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.main-title {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 40px;
+}
+
+form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+form h3 {
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    font-size: 24px;
+}
+form .input-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+form input {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80px
+}
+form input::placeholder {
+    font-size: 12px;
+}
+
+form .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+form .input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+form button {
+    width: fit-content;
+    padding: 10px 30px;
+    border: 2px solid #000;
+    margin-top: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+form button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.2s;
+}
+
+form .result {
+    display: none;
+    -webkit-animation: animate-div 1s;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-pace .input-container {
+    gap: 15px;
+}
